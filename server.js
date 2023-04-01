@@ -17,7 +17,7 @@ app.post("/incoming", (req, res) => {
   console.log("-----------Received POST Response webhook-----------");
 
   // format and dump the request payload recieved
-  console.log(prettyjson.render(req, options));
+  console.log(prettyjson.render(req.body, options));
   console.log("-----------------------");
 
   let message = {
@@ -35,7 +35,7 @@ app.get("/incoming", (req, res) => {
   console.log("-----------Received GET Response webhook-----------");
 
   // format and dump the request payload recieved
-  console.log(prettyjson.render(req, options));
+  console.log(prettyjson.render(req.body, options));
   // console.log(req.query);
   console.log("-----------------------");
 
