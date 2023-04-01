@@ -1,0 +1,16 @@
+{
+  "name": "noriamybusiness_mpesa_webhook",
+  "version": "1.0.0",
+  "description": "weghook for listening to events",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Brian Orina Otieno",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "prettyjson": "^1.2.5"
+  }
+}
